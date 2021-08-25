@@ -6,15 +6,17 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    // sa para debugar - deve aparecer um zero
+    // para debugar - deve aparecer um zero
     void Start()
     {
         Debug.Log(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void PlayGame()
-    {   
-        // remover o coment�rio abaixo ao criar a nova cena
+    {
+        Debug.Log("Play clicked");
+
+        // remover o comentario abaixo ao criar a nova cena
         // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
